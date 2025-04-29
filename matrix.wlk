@@ -7,7 +7,7 @@ object nave{
     /* transformo primero la lista a una de numeros para devolver el obj transformado*/
     method estaEquilibrada(){
         return 
-            self.pasajeroDeMayorVitalidad().vitalidad() < self.pasajeroDeMenosVitalidad().vitalidad()
+            self.pasajeroDeMayorVitalidad().vitalidad() < self.pasajeroDeMenosVitalidad().vitalidad()*2
     }
     method pasajeroDeMenosVitalidad() = pasajeros.min({p => p.vitalidad()})
     method estaElElegido() = pasajeros.any({p => p.esElElegido()})
